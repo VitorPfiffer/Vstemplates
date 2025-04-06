@@ -1,0 +1,18 @@
+﻿<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CSharp\1033\CrudModuleGenerator</RelativePathOnDisk>
+    <TemplateFileName>CrudModuleGenerator.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name>CrudModuleGenerator</Name>
+        <Description>CrudModuleGenerator</Description>
+        <Icon>CrudModuleGenerator.ico</Icon>
+        <TemplateID>84690243-0bb6-463b-bf18-02b80a74c9c4</TemplateID>
+        <ProjectType>CSharp</ProjectType>
+        <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+        <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+        <DefaultName>Class.cs</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>

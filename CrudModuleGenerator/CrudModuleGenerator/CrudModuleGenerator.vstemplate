@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>CrudModuleGenerator</Name>
+    <Description>CrudModuleGenerator</Description>
+    <Icon>CrudModuleGenerator.ico</Icon>
+    <TemplateID>84690243-0bb6-463b-bf18-02b80a74c9c4</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>Class.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+    </References>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="$EntityName$Controller.cs">Api\Controller.cs</ProjectItem>
+	  <!--Application Layer-->
+	  <ProjectItem ReplaceParameters="true" TargetFileName="$EntityName$AppService.cs">Application\AppService.cs</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="I$EntityName$AppService.cs">Application\IAppService.cs</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="Add$EntityName$ViewModel.cs">Application\ViewModels\AddViewModel.cs</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="Update$EntityName$ViewModel.cs">Application\ViewModels\UpdateViewModel.cs</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="$EntityName$ViewModel.cs">Application\ViewModels\ViewModel.cs</ProjectItem>
+	  
+	   <!--Domain Layer-->
+	  <ProjectItem ReplaceParameters="true" TargetFileName="$EntityName$DomainService.cs">Domain\DomainService.cs</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="I$EntityName$DomainService.cs">Domain\IDomainService.cs</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="I$EntityName$Repository.cs">Infrastructure\IRepository.cs</ProjectItem>
+	  <!--Infrastructure Layer-->
+	  <ProjectItem ReplaceParameters="true" TargetFileName="$EntityName$Repository.cs">Infrastructure\Repository.cs</ProjectItem>
+  </TemplateContent>
+	<WizardExtension>
+		<Assembly>CrudModuleGeneratorWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=0456a1f4f94b2459</Assembly>
+		<FullClassName>CrudModuleGeneratorWizard.WizardImplementation</FullClassName>
+	</WizardExtension>
+</VSTemplate>
